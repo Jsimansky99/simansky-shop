@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simansky Shop</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- BARRA DE NAVEGACION-->
+    <section id="header">
+        <a href="index.html"><img src="./img/logo3.0.png" class="logo" alt=""></a>
+        
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="shop.html">Productos</a></li>
+                <li><a href="about.html">Info</a></li> 
+                <li><a href="contact.html">Contacto</a></li>
+                <!--<li id="lg-bag"><a href="cart.html"><img src="./img/icons/shopping-bag.png" class="cart-icons" alt=""></a></li>-->
+                <li id="lg-user"><a class="active"  href="user.html"><img src="./img/icons/usuario (2).png" class="user-icons" alt=""></a></li>
+                <li><button id="checkout" class="button-checkout" onclick="pay()"><img src="./img/icons/shopping-bag.png" class="cart" alt=""></button></li>
+                <li><a href="#" id="close"><img src="./img/icons/close.png" alt="" class="icons-close"></a></li>
+            </ul>
+
+            <div id="mobile">
+                    <a class="button-checkout" onclick="pay()" href="cart.html"><img src="./img/icons/shopping-bag.png" class="cart-icons" alt=""></a>
+                    <a href="user.html"><img src="./img/icons/usuario (2).png" class="user-icons" alt=""></a>
+                    <a id="bar" href="#"><img src="./img/icons/menu-burger.png" class="icons-burger"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION USUARIO-->
+    <section class="contact">
+        
+        <div class="container-form sign-up">
+            <div class="welcome-back">
+                <div class="message">
+                    <h2>Bienvenidos a Simansky Shop</h2>
+                    <p>Si ya tienes una cuenta por favor inicia sesion aquí.</p>
+                    <button class="sign-up-btn">Iniciar Sesion</button>
+                </div>
+            </div>
+            
+            <form name="form1" method="POST" action="" class="formulario">
+                <h2 class="create-account">Crear una cuenta</h2>
+                <div class="iconos">
+                    <div class="border-icon">
+                        <i class='bx bxl-instagram'></i>
+                    </div>
+                    <div class="border-icon">
+                        <i class='bx bxl-linkedin' ></i>
+                    </div>
+                    <div class="border-icon">
+                        <i class='bx bxl-facebook-circle' ></i>
+                    </div>
+                </div>
+                <p class="cuenta-gratis">Crear una cuenta gratis</p>
+                <input name="nombre" id="nombre" value="" type="text" placeholder="Nombre">
+                <input name="email" id="email" value="" type="email" placeholder="Email">
+                <input name="clave1" id="clave1" value="" type="password" placeholder="Contraseña">
+                <input name="boton" onClick="MiPrimerFormulario()" type="button" value="Registrarse">
+            </form>
+        </div>
+    
+        <div class="container-form sign-in">
+            <form class="formulario">
+                <h2 class="create-account">Iniciar Sesion</h2>
+                <div class="iconos">
+                    <div class="border-icon">
+                        <i class='bx bxl-instagram'></i>
+                    </div>
+                    <div class="border-icon">
+                        <i class='bx bxl-linkedin' ></i>
+                    </div>
+                    <div class="border-icon">
+                        <i class='bx bxl-facebook-circle' ></i>
+                    </div>
+                </div>
+                <p class="cuenta-gratis">¿Aun no tienes una cuenta?</p>
+                <input name="emaili" id="emaili" type="email" placeholder="Email">
+                <input name ="password" id="password" type="password" placeholder="Contraseña">
+                <input name="boton" onClick="MiSegundoFormulario()" type="button" value="Iniciar Sesion">
+            </form> 
+
+                <div class="welcome-back">
+                    <div class="message">
+                        <h2>Bienvenido!</h2>
+                        <p>Si aun no tienes una cuenta por favor registrese aquí.</p>
+                        <button class="sign-in-btn">Registrarse</button>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- FOOTER-->
+    <footer class="section-p1">
+        <div class="col">
+            <a href="./index.html"><img src="./img/logo3.0.png" class="logo" alt=""></a>
+            <h4>Contacto</h4>
+            <p><strong>Dirección:</strong> Caracas, Venezuela.</p>
+            <p><strong>Telefono:</strong> 0414-0181115 </p>
+            <p><strong>Horario</strong> Lunes a Sabado, 8:00am - 6:00pm</p> 
+            <div class="follow">
+                <h4>Síganos</h4>
+                <div class="icon">
+                    <a href="https://wa.me/04140181115"><img src="./img/icons/whatsapp.png" class="icon-social" alt=""></a>
+                    <a href="#"><img src="./img/icons/instagram.png" class="icon-social" alt=""></a>
+                    <a href="#"><img src="./img/icons/facebook.png" class="icon-social" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>Info</h4>
+            <a href="#">Acerca de Nosotros</a>
+            <a href="#">Delivery</a>
+            <a href="#">Política de privacidad</a>
+            <a href="#">Terminos y Condiciones</a>
+            <a href="#">Contacta con Nosotros</a>
+        </div>
+
+        <div class="col">
+            <h4>Mi Cuenta</h4>
+            <a href="#">Registrarse</a>
+            <a href="#">Ver carrito</a>
+            <a href="#">Mi lista de favoritos</a>
+            <a href="#">Rastrear mi pedido</a>
+            <a href="#">Ayuda</a>
+        </div>
+
+        <div class="col install">
+            <h4>Instalar App</h4>
+            <p>Desde la Tienda de Aplicaciones o Google Play</p>
+            <div class="row">
+                <img src="./img/pay/app.jpg" alt="">
+                <img src="./img/pay/play.jpg" alt="">
+            </div>
+            <p>Formas de Pago</p>
+            <img src="./img/pay/pay.png">
+        </div>
+
+        <div class="copyright">
+            <p> Copyright © 2022 - <strong>Simansky Shop</strong>. Todos los Derechos Reservados.</p>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
+</body>
+</html> 

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simansky Shop</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACION-->
+    <section id="header">
+        <a href="#"><img src="./img/logo3.0.png" class="logo" alt=""></a>
+        
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="shop.html">Productos</a></li>
+                <li><a href="about.html">Info</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+                <li id="lg-bag"><a class="active" href="cart.html"><img src="./img/icons/shopping-bag.png" class="cart-icons" alt=""></a></li>
+                <li id="lg-user"><a href="user.html"><img src="./img/icons/usuario (2).png" class="user-icons" alt=""></a></li>
+                <li><a href="#" id="close"><img src="./img/icons/close.png" alt="" class="icons-close"></a></li>
+            </ul>
+
+            <div id="mobile">
+                    <a href="cart.html"><img src="./img/icons/shopping-bag.png" class="cart-icons" alt=""></a>
+                    <a href="user.html"><img src="./img/icons/usuario (2).png" class="user-icons" alt=""></a>
+                    <a id="bar" href="#"><img src="./img/icons/menu-burger.png" class="icons-burger"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAGINA HEADER -->
+    <section id="page-header" class="about-header">
+        <h2>#Compra</h2>
+
+        <p> Descuentos del 25% y 50% en todos nuestros productos... Aprovecha que se acaba!</p>
+    
+    </section>
+
+    <!-- TABLA DE COMPRA DE PRODUCTOS -->
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>REMOVER</td>
+                    <td>Imagen</td>
+                    <td>Producto</td>
+                    <td>Precio</td>
+                    <td>Cantidad</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#"><img class="icon-remove" src="./img/icons/close-border.png" alt=""></a></td>
+                    <td><img class="img-product" src="./img/products/f3.jpg" alt=""></td>
+                    <td>Camiseta Astronaut Cartoon</td>
+                    <td>$20.00</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$20.00</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><img class="icon-remove" src="./img/icons/close-border.png" alt=""></a></td>
+                    <td><img class="img-product" src="./img/products/f2.jpg" alt=""></td>
+                    <td>Camiseta Astronaut Cartoon</td>
+                    <td>$20.00</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$20.00</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><img class="icon-remove" src="./img/icons/close-border.png" alt=""></a></td>
+                    <td><img class="img-product" src="./img/products/f1.jpg" alt=""></td>
+                    <td>Camiseta Astronaut Cartoon</td>
+                    <td>$20.00</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$20.00</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- CUPON DESCUENTO y TOTAL-->
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Aplicar Cupón</h3>
+            <div>
+                <input type="text" placeholder="Introduzca su cupón">
+                <button class="normal">Aplicar</button>
+            </div>
+        </div>
+
+        <div id="subtotal">
+            <h3>Total del Carrito</h3>
+            <table>
+                <tr>
+                    <td>Carrito Subtotal</td>
+                    <td>$60</td>
+                </tr>
+                <tr>
+                    <td>Envio</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><Strong>Total</Strong></td>
+                    <td>$ 60</td>
+                </tr>
+            </table>
+            <button class="normal">Realizar Compra</button>
+        </div>
+    </section>
+
+    <!-- SUBSCRIBIRSE -->
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Subscribase ahora!</h4>
+            <p>Recibira todas nuestras <span>promociones, descuentos, sorpresas</span> y mucho más...</p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Dirección de correo electrónico">
+            <button class="normal" onclick="suscripcion()">Suscribirse</button>
+        </div>
+    </section>
+
+    <!-- FOOTER-->
+    <footer class="section-p1">
+        <div class="col">
+            <a href="./index.html"><img src="./img/logo3.0.png" class="logo" alt=""></a>
+            <h4>Contacto</h4>
+            <p><strong>Dirección:</strong> Caracas, Venezuela.</p>
+            <p><strong>Telefono:</strong> 0414-0181115 </p>
+            <p><strong>Horario</strong> Lunes a Sabado, 8:00am - 6:00pm</p> 
+            <div class="follow">
+                <h4>Síganos</h4>
+                <div class="icon">
+                    <a href="https://wa.me/04140181115"><img src="./img/icons/whatsapp.png" class="icon-social" alt=""></a>
+                    <a href="#"><img src="./img/icons/instagram.png" class="icon-social" alt=""></a>
+                    <a href="#"><img src="./img/icons/facebook.png" class="icon-social" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>Info</h4>
+            <a href="#">Acerca de Nosotros</a>
+            <a href="#">Delivery</a>
+            <a href="#">Política de privacidad</a>
+            <a href="#">Terminos y Condiciones</a>
+            <a href="#">Contacta con Nosotros</a>
+        </div>
+
+        <div class="col">
+            <h4>Mi Cuenta</h4>
+            <a href="#">Registrarse</a>
+            <a href="#">Ver carrito</a>
+            <a href="#">Mi lista de favoritos</a>
+            <a href="#">Rastrear mi pedido</a>
+            <a href="#">Ayuda</a>
+        </div>
+
+        <div class="col install">
+            <h4>Instalar App</h4>
+            <p>Desde la Tienda de Aplicaciones o Google Play</p>
+            <div class="row">
+                <img src="./img/pay/app.jpg" alt="">
+                <img src="./img/pay/play.jpg" alt="">
+            </div>
+            <p>Formas de Pago</p>
+            <img src="./img/pay/pay.png">
+        </div>
+
+        <div class="copyright">
+            <p> Copyright © 2022 - <strong>Simansky Shop</strong>. Todos los Derechos Reservados.</p>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>

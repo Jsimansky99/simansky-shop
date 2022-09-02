@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simansky Shop</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <!-- BARRA DE NAVEGACION-->
+    <section id="header">
+        <a href="index.html"><img src="./img/logo3.0.png" class="logo" alt=""></a>
+        
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Inicio</a></li>
+                <li><a href="shop.html">Productos</a></li>
+                <li><a href="about.html">Info</a></li> 
+                <li><a href="contact.html">Contacto</a></li>
+                <!--<li id="lg-bag"><a href="cart.html"><img src="./img/icons/shopping-bag.png" class="cart-icons" alt=""></a></li>-->
+                <li id="lg-user"><a href="user.html"><img src="./img/icons/usuario (2).png" class="user-icons" alt=""></a></li>
+                <li><button id="checkout" class="button-checkout" onclick="pay()"><img src="./img/icons/shopping-bag.png" class="cart" alt=""></button></li>
+                <li><a href="#" id="close"><img src="./img/icons/close.png" alt="" class="icons-close"></a></li>
+            </ul>
+
+            <div id="mobile">
+                    <a class="button-checkout" onclick="pay()" href="cart.html"><img src="./img/icons/shopping-bag.png" class="cart-icons" alt=""></a>
+                    <a href="user.html"><img src="./img/icons/usuario (2).png" class="user-icons" alt=""></a>
+                    <a id="bar" href="#"><img src="./img/icons/menu-burger.png" class="icons-burger"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAGINA PRINCIPAL-->
+    <section id="hero">
+        <h4>Trade-in-offer</h4>
+        <h2>Excelentes Ofertas </h2>
+        <h1>Todos los Productos</h1>
+        <p>¡Ahorre más con nuestras promociones, hasta un 50 % de descuento!</p>
+        <button>Comprar Ahora</button>
+    </section>
+
+    <!-- CARACTERISTICA -->
+    <section id="feature" class="section-p1">
+        <div class="fe-box">
+            <img src="./img/features/f1.png" alt="">
+            <h6> Envíos Gratis </h6>
+        </div>
+        <div class="fe-box">
+            <img src="./img/features/f2.png" alt="">
+            <h6> Pedido en Línea </h6>
+        </div>
+        <div class="fe-box">
+            <img src="./img/features/f3.png" alt="">
+            <h6> Ahorre Dinero </h6>
+        </div>
+        <div class="fe-box">
+            <img src="./img/features/f4.png" alt="">
+            <h6> Promociones </h6>
+        </div>
+        <div class="fe-box">
+            <img src="./img/features/f5.png" alt="">
+            <h6> Negociación </h6>
+        </div>
+        <div class="fe-box">
+            <img src="./img/features/f6.png" alt="">
+            <h6> Soporte 24/7 </h6>
+        </div>
+    </section>
+
+    <!-- PRODUCTOS DESTACADOS-->
+    <section id="product1" class="section-p1">
+        <h2>Productos Destacados</h2>
+        <p>Colección de Verano</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img class="pro-img" src="./img/products/f1.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Camisa - Astronaut Cartoon</h5>
+                    <div class="star">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                    </div>
+                <h4>$20</h4>
+                </div>
+                <button class="button-add" onclick="add('Camisa - Astronaut Cartoon', 20)">Agregar</button>
+            </div>
+
+            <div class="pro">
+                <img class="pro-img" src="./img/products/f2.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Camisa - Astronaut Cartoon</h5>
+                    <div class="star">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                    </div>
+                <h4>$51</h4>
+                </div>
+                <button class="button-add" onclick="add('Camisa - Astronaut Cartoon', 51)">Agregar</button>
+            </div>
+
+            <div class="pro">
+                <img class="pro-img" src="./img/products/f3.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Camisa - Astronaut Cartoon</h5>
+                    <div class="star">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                    </div>
+                <h4>$501</h4>
+                </div>
+                <button class="button-add" onclick="add('Camisa - Astronaut Cartoon', 501)">Agregar</button>
+            </div>
+
+            <div class="pro">
+                <img class="pro-img" src="./img/products/f4.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Camisa - Astronaut Cartoon</h5>
+                    <div class="star">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                    </div>
+                <h4>$20</h4>
+                </div>
+                <button class="button-add" onclick="add('Camisa - Astronaut Cartoon', 20)">Agregar</button>
+            </div>
+
+            <div class="pro">
+                <img class="pro-img" src="./img/products/f5.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Camisa - Astronaut Cartoon</h5>
+                    <div class="star">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                    </div>
+                <h4>$20</h4>
+                </div>
+                <button class="button-add" onclick="add('Camisa - Astronaut Cartoon', 20)">Agregar</button>
+            </div>
+
+            <div class="pro">
+                <img class="pro-img" src="./img/products/f6.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Camisa - Astronaut Cartoon</h5>
+                    <div class="star">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                    </div>
+                <h4>$20</h4>
+                </div>
+                <button class="button-add" onclick="add('Camisa - Astronaut Cartoon', 20)">Agregar</button>
+            </div>
+
+            <div class="pro">
+                <img class="pro-img" src="./img/products/f7.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Camisa - Astronaut Cartoon</h5>
+                    <div class="star">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                    </div>
+                <h4>$20</h4>
+                </div>
+                <button class="button-add" onclick="add('Camisa - Astronaut Cartoon', 20)">Agregar</button>
+            </div>
+
+            <div class="pro">
+                <img class="pro-img" src="./img/products/f8.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Camisa - Astronaut Cartoon</h5>
+                    <div class="star">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                    </div>
+                <h4>$20</h4>
+                </div>
+                <button class="button-add" onclick="add('Camisa - Astronaut Cartoon', 20)">Agregar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTOS CATGORIA 2 -->   
+    <section id="product1" class="section-p1">
+        <h2>FAVORITOS</h2>
+        <p>Colección PLAYA SOL Y ARENA</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img class="pro-img" src="./img/products/f1.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Camisa - Astronaut Cartoon</h5>
+                    <div class="star">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                    </div>
+                <h4>$20</h4>
+                </div>
+                <button class="button-add" onclick="add('Camisa - Astronaut Cartoon', 20)">Agregar</button>
+            </div>
+
+            <div class="pro">
+                <img class="pro-img" src="./img/products/f2.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Camisa - Astronaut Cartoon</h5>
+                    <div class="star">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                    </div>
+                <h4>$51</h4>
+                </div>
+                <button class="button-add" onclick="add('Camisa - Astronaut Cartoon', 51)">Agregar</button>
+            </div>
+
+            <div class="pro">
+                <img class="pro-img" src="./img/products/f3.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Camisa - Astronaut Cartoon</h5>
+                    <div class="star">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                    </div>
+                <h4>$501</h4>
+                </div>
+                <button class="button-add" onclick="add('Camisa - Astronaut Cartoon', 501)">Agregar</button>
+            </div>
+
+            <div class="pro">
+                <img class="pro-img" src="./img/products/f1.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Camisa - Astronaut Cartoon</h5>
+                    <div class="star">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                    </div>
+                <h4>$20</h4>
+                </div>
+                <button class="button-add" onclick="add('Camisa - Astronaut Cartoon', 20)">Agregar</button>
+            </div>
+
+            <div class="pro-container">
+                <div class="pro">
+                    <img class="pro-img" src="./img/products/f4.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Camisa - Astronaut Cartoon</h5>
+                        <div class="star">
+                            <img class="star-icons" src="./img/icons/star.png">
+                            <img class="star-icons"src="./img/icons/star.png">
+                            <img class="star-icons" src="./img/icons/star.png">
+                            <img class="star-icons"src="./img/icons/star.png">
+                            <img class="star-icons"src="./img/icons/star.png">
+                        </div>
+                    <h4>$20</h4>
+                    </div>
+                    <button class="button-add" onclick="add('Camisa - Astronaut Cartoon', 20)">Agregar</button>
+                </div>
+    
+                <div class="pro">
+                    <img class="pro-img" src="./img/products/f5.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Camisa - Astronaut Cartoon</h5>
+                        <div class="star">
+                            <img class="star-icons" src="./img/icons/star.png">
+                            <img class="star-icons"src="./img/icons/star.png">
+                            <img class="star-icons" src="./img/icons/star.png">
+                            <img class="star-icons"src="./img/icons/star.png">
+                            <img class="star-icons"src="./img/icons/star.png">
+                        </div>
+                    <h4>$51</h4>
+                    </div>
+                    <button class="button-add" onclick="add('Camisa - Astronaut Cartoon', 51)">Agregar</button>
+                </div>
+    
+                <div class="pro">
+                    <img class="pro-img" src="./img/products/f6.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Camisa - Astronaut Cartoon</h5>
+                        <div class="star">
+                            <img class="star-icons" src="./img/icons/star.png">
+                            <img class="star-icons"src="./img/icons/star.png">
+                            <img class="star-icons" src="./img/icons/star.png">
+                            <img class="star-icons"src="./img/icons/star.png">
+                            <img class="star-icons"src="./img/icons/star.png">
+                        </div>
+                    <h4>$501</h4>
+                    </div>
+                    <button class="button-add" onclick="add('Camisa - Astronaut Cartoon', 501)">Agregar</button>
+                </div>
+    
+                <div class="pro">
+                    <img class="pro-img" src="./img/products/f7.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Camisa - Astronaut Cartoon</h5>
+                        <div class="star">
+                            <img class="star-icons" src="./img/icons/star.png">
+                            <img class="star-icons"src="./img/icons/star.png">
+                            <img class="star-icons" src="./img/icons/star.png">
+                            <img class="star-icons"src="./img/icons/star.png">
+                            <img class="star-icons"src="./img/icons/star.png">
+                        </div>
+                    <h4>$20</h4>
+                    </div>
+                    <button class="button-add" onclick="add('Camisa - Astronaut Cartoon', 20)">Agregar</button>
+                </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTOS CATGORIA 3 -->   
+    <section id="product1" class="section-p1">
+        <h2>EN OFERTA</h2>
+        <p>Colección Descuento</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img class="pro-img" src="./img/products/f1.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Camisa - Astronaut Cartoon</h5>
+                    <div class="star">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                    </div>
+                <h4>$20</h4>
+                </div>
+                <button class="button-add" onclick="add('Camisa - Astronaut Cartoon', 20)">Agregar</button>
+            </div>
+
+            <div class="pro">
+                <img class="pro-img" src="./img/products/f2.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Camisa - Astronaut Cartoon</h5>
+                    <div class="star">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                    </div>
+                <h4>$51</h4>
+                </div>
+                <button class="button-add" onclick="add('Camisa - Astronaut Cartoon', 51)">Agregar</button>
+            </div>
+
+            <div class="pro">
+                <img class="pro-img" src="./img/products/f3.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Camisa - Astronaut Cartoon</h5>
+                    <div class="star">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                    </div>
+                <h4>$501</h4>
+                </div>
+                <button class="button-add" onclick="add('Camisa - Astronaut Cartoon', 501)">Agregar</button>
+            </div>
+
+            <div class="pro">
+                <img class="pro-img" src="./img/products/f1.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Camisa - Astronaut Cartoon</h5>
+                    <div class="star">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                    </div>
+                <h4>$20</h4>
+                </div>
+                <button class="button-add" onclick="add('Camisa - Astronaut Cartoon', 20)">Agregar</button>
+            </div>
+
+            <div class="pro-container">
+                <div class="pro">
+                    <img class="pro-img" src="./img/products/f4.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Camisa - Astronaut Cartoon</h5>
+                        <div class="star">
+                            <img class="star-icons" src="./img/icons/star.png">
+                            <img class="star-icons"src="./img/icons/star.png">
+                            <img class="star-icons" src="./img/icons/star.png">
+                            <img class="star-icons"src="./img/icons/star.png">
+                            <img class="star-icons"src="./img/icons/star.png">
+                        </div>
+                    <h4>$20</h4>
+                    </div>
+                    <button class="button-add" onclick="add('Camisa - Astronaut Cartoon', 20)">Agregar</button>
+                </div>
+    
+                <div class="pro">
+                    <img class="pro-img" src="./img/products/f5.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Camisa - Astronaut Cartoon</h5>
+                        <div class="star">
+                            <img class="star-icons" src="./img/icons/star.png">
+                            <img class="star-icons"src="./img/icons/star.png">
+                            <img class="star-icons" src="./img/icons/star.png">
+                            <img class="star-icons"src="./img/icons/star.png">
+                            <img class="star-icons"src="./img/icons/star.png">
+                        </div>
+                    <h4>$51</h4>
+                    </div>
+                    <button class="button-add" onclick="add('Camisa - Astronaut Cartoon', 51)">Agregar</button>
+                </div>
+    
+                <div class="pro">
+                    <img class="pro-img" src="./img/products/f6.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Camisa - Astronaut Cartoon</h5>
+                        <div class="star">
+                            <img class="star-icons" src="./img/icons/star.png">
+                            <img class="star-icons"src="./img/icons/star.png">
+                            <img class="star-icons" src="./img/icons/star.png">
+                            <img class="star-icons"src="./img/icons/star.png">
+                            <img class="star-icons"src="./img/icons/star.png">
+                        </div>
+                    <h4>$501</h4>
+                    </div>
+                    <button class="button-add" onclick="add('Camisa - Astronaut Cartoon', 501)">Agregar</button>
+                </div>
+    
+                <div class="pro">
+                    <img class="pro-img" src="./img/products/f7.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Camisa - Astronaut Cartoon</h5>
+                        <div class="star">
+                            <img class="star-icons" src="./img/icons/star.png">
+                            <img class="star-icons"src="./img/icons/star.png">
+                            <img class="star-icons" src="./img/icons/star.png">
+                            <img class="star-icons"src="./img/icons/star.png">
+                            <img class="star-icons"src="./img/icons/star.png">
+                        </div>
+                    <h4>$20</h4>
+                    </div>
+                    <button class="button-add" onclick="add('Camisa - Astronaut Cartoon', 20)">Agregar</button>
+                </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTOS CATGORIA 4 -->   
+    <section id="product1" class="section-p1">
+        <h2>HOMBRES</h2>
+        <p>Colección Macho Alfa</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img class="pro-img" src="./img/products/n1.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Camisa - Astronaut Cartoon</h5>
+                    <div class="star">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                    </div>
+                <h4>$20</h4>
+                </div>
+                <button class="button-add" onclick="add('Camisa - Astronaut Cartoon', 20)">Agregar</button>
+            </div>
+
+            <div class="pro">
+                <img class="pro-img" src="./img/products/n2.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Camisa - Astronaut Cartoon</h5>
+                    <div class="star">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                    </div>
+                <h4>$51</h4>
+                </div>
+                <button class="button-add" onclick="add('Camisa - Astronaut Cartoon', 51)">Agregar</button>
+            </div>
+
+            <div class="pro">
+                <img class="pro-img" src="./img/products/n3.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Camisa - Astronaut Cartoon</h5>
+                    <div class="star">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                    </div>
+                <h4>$501</h4>
+                </div>
+                <button class="button-add" onclick="add('Camisa - Astronaut Cartoon', 501)">Agregar</button>
+            </div>
+
+            <div class="pro">
+                <img class="pro-img" src="./img/products/n4.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Camisa - Astronaut Cartoon</h5>
+                    <div class="star">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                    </div>
+                <h4>$20</h4>
+                </div>
+                <button class="button-add" onclick="add('Camisa - Astronaut Cartoon', 20)">Agregar</button>
+            </div>
+
+            <div class="pro-container">
+                <div class="pro">
+                    <img class="pro-img" src="./img/products/f4.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Camisa - Astronaut Cartoon</h5>
+                        <div class="star">
+                            <img class="star-icons" src="./img/icons/star.png">
+                            <img class="star-icons"src="./img/icons/star.png">
+                            <img class="star-icons" src="./img/icons/star.png">
+                            <img class="star-icons"src="./img/icons/star.png">
+                            <img class="star-icons"src="./img/icons/star.png">
+                        </div>
+                    <h4>$20</h4>
+                    </div>
+                    <button class="button-add" onclick="add('Camisa - Astronaut Cartoon', 20)">Agregar</button>
+                </div>
+    
+                <div class="pro">
+                    <img class="pro-img" src="./img/products/f5.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Camisa - Astronaut Cartoon</h5>
+                        <div class="star">
+                            <img class="star-icons" src="./img/icons/star.png">
+                            <img class="star-icons"src="./img/icons/star.png">
+                            <img class="star-icons" src="./img/icons/star.png">
+                            <img class="star-icons"src="./img/icons/star.png">
+                            <img class="star-icons"src="./img/icons/star.png">
+                        </div>
+                    <h4>$51</h4>
+                    </div>
+                    <button class="button-add" onclick="add('Camisa - Astronaut Cartoon', 51)">Agregar</button>
+                </div>
+    
+                <div class="pro">
+                    <img class="pro-img" src="./img/products/f6.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Camisa - Astronaut Cartoon</h5>
+                        <div class="star">
+                            <img class="star-icons" src="./img/icons/star.png">
+                            <img class="star-icons"src="./img/icons/star.png">
+                            <img class="star-icons" src="./img/icons/star.png">
+                            <img class="star-icons"src="./img/icons/star.png">
+                            <img class="star-icons"src="./img/icons/star.png">
+                        </div>
+                    <h4>$501</h4>
+                    </div>
+                    <button class="button-add" onclick="add('Camisa - Astronaut Cartoon', 501)">Agregar</button>
+                </div>
+    
+                <div class="pro">
+                    <img class="pro-img" src="./img/products/f7.jpg" alt="">
+                    <div class="des">
+                        <span>adidas</span>
+                        <h5>Camisa - Astronaut Cartoon</h5>
+                        <div class="star">
+                            <img class="star-icons" src="./img/icons/star.png">
+                            <img class="star-icons"src="./img/icons/star.png">
+                            <img class="star-icons" src="./img/icons/star.png">
+                            <img class="star-icons"src="./img/icons/star.png">
+                            <img class="star-icons"src="./img/icons/star.png">
+                        </div>
+                    <h4>$20</h4>
+                    </div>
+                    <button class="button-add" onclick="add('Camisa - Astronaut Cartoon', 20)">Agregar</button>
+                </div>
+        </div>
+    </section>
+
+
+    <!-- LLAMADO A LA ACCION BANNER-->
+    <section id="banner" class="section-m1">
+        <h4>PROMOCION 2022!</h4>
+        <h2>Hasta un <span> 50%</span> de descuento - Camisetas y accesorios</h2>
+        <button class="normal"><a href="shop.html"> Ver mas</a> </button>
+    </section>
+
+    <!-- PRODUCTOS RECIENTES -->
+    <section id="product1" class="section-p1">
+        <h2>Productos Llegados Recientemente !</h2>
+        <p>Nueva Colección - Diseño Moderno</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img class="pro-img" src="./img/products/n1.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Camisa - Astronaut Cartoon</h5>
+                    <div class="star">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                    </div>
+                <h4>$20</h4>
+                </div>
+                <button class="button-add" onclick="add('Camisa - Astronaut Cartoon', 20)">Agregar</button>
+            </div>
+
+            <div class="pro">
+                <img class="pro-img" src="./img/products/n2.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Camisa - Astronaut Cartoon</h5>
+                    <div class="star">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                    </div>
+                <h4>$20</h4>
+                </div>
+                <button class="button-add" onclick="add('Camisa - Astronaut Cartoon', 20)">Agregar</button>
+            </div>
+
+            <div class="pro">
+                <img class="pro-img" src="./img/products/n3.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Camisa - Astronaut Cartoon</h5>
+                    <div class="star">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                    </div>
+                <h4>$20</h4>
+                </div>
+                <button class="button-add" onclick="add('Camisa - Astronaut Cartoon', 20)">Agregar</button>
+            </div>
+
+            <div class="pro">
+                <img class="pro-img" src="./img/products/n4.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Camisa - Astronaut Cartoon</h5>
+                    <div class="star">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                    </div>
+                <h4>$20</h4>
+                </div>
+                <button class="button-add" onclick="add('Camisa - Astronaut Cartoon', 20)">Agregar</button>
+            </div>
+
+            <div class="pro">
+                <img class="pro-img" src="./img/products/n5.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Camisa - Astronaut Cartoon</h5>
+                    <div class="star">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                    </div>
+                <h4>$20</h4>
+                </div>
+                <button class="button-add" onclick="add('Camisa - Astronaut Cartoon', 20)">Agregar</button>
+            </div>
+
+            <div class="pro">
+                <img class="pro-img" src="./img/products/n6.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Camisa - Astronaut Cartoon</h5>
+                    <div class="star">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                    </div>
+                <h4>$20</h4>
+                </div>
+                <button class="button-add" onclick="add('Camisa - Astronaut Cartoon', 20)">Agregar</button>
+            </div>
+
+            <div class="pro">
+                <img class="pro-img" src="./img/products/n7.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Camisa - Astronaut Cartoon</h5>
+                    <div class="star">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                    </div>
+                <h4>$20</h4>
+                </div>
+                <button class="button-add" onclick="add('Camisa - Astronaut Cartoon', 20)">Agregar</button>
+            </div>
+
+            <div class="pro">
+                <img class="pro-img" src="./img/products/n8.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Camisa - Astronaut Cartoon</h5>
+                    <div class="star">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons" src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                        <img class="star-icons"src="./img/icons/star.png">
+                    </div>
+                <h4>$20</h4>
+                </div>
+                <button class="button-add" onclick="add('Camisa - Astronaut Cartoon', 20)">Agregar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNERS 1era Seccion -->
+    <section id="sm-banner" class="section-p1">
+        <div class="banner-box">
+            <h4>Nos volvimos Locos</h4>
+            <h2>Compra 1 y obten 1 gratis</h2>
+            <span>El mejor vestido clásico está en oferta </span>
+            <button class="white"><a href="./shop.html"> Ver mas</a></button>
+        </div>
+        <div class="banner-box banner-box2">
+            <h4>Primavera / Verano</h4>
+            <h2>Próxima temporada</h2>
+            <span>Simansky Shop</span>
+            <button class="white"><a href="./shop.html"> Coleccion</a></button>
+        </div>
+    </section>
+
+    <!-- BANNERS 2da Seccion -->
+    <section id="banner3">
+        <div class="banner-box">
+            <h2>VENTA DE TEMPORADA</h2>
+            <h3>Colección Invierno - 50% descuento</h3>
+        </div>
+
+        <div class="banner-box banner-box2">
+            <h2>NUEVA COLECCIÓN DE CALZADO</h2>
+            <h3>Primavera / Verano 2022</h3>
+        </div>
+
+        <div class="banner-box banner-box3">
+            <h2>CAMISETAS</h2>
+            <h3>Nuevos Estampados -Tendencia</h3>
+        </div>
+    </section>
+
+    <!-- SUBSCRIBIRSE -->
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Subscribase ahora!</h4>
+            <p>Recibira todas nuestras <span>promociones, descuentos, sorpresas</span> y mucho más...</p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Dirección de correo electrónico">
+            <button class="normal" onclick="suscripcion()">Suscribirse</button>
+        </div>
+    </section>
+
+    <!-- FOOTER-->
+    <footer class="section-p1">
+        <div class="col">
+            <a href="./index.html"><img src="./img/logo3.0.png" class="logo" alt=""></a>
+            <h4>Contacto</h4>
+            <p><strong>Dirección:</strong> Caracas, Venezuela.</p>
+            <p><strong>Telefono:</strong> 0414-0181115 </p>
+            <p><strong>Horario</strong> Lunes a Sabado, 8:00am - 6:00pm</p> 
+            <div class="follow">
+                <h4>Síganos</h4>
+                <div class="icon">
+                    <a href="https://wa.me/04140181115"><img src="./img/icons/whatsapp.png" class="icon-social" alt=""></a>
+                    <a href="#"><img src="./img/icons/instagram.png" class="icon-social" alt=""></a>
+                    <a href="#"><img src="./img/icons/facebook.png" class="icon-social" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>Info</h4>
+            <a href="#">Acerca de Nosotros</a>
+            <a href="#">Delivery</a>
+            <a href="#">Política de privacidad</a>
+            <a href="#">Terminos y Condiciones</a>
+            <a href="#">Contacta con Nosotros</a>
+        </div>
+
+        <div class="col">
+            <h4>Mi Cuenta</h4>
+            <a href="#">Registrarse</a>
+            <a href="#">Ver carrito</a>
+            <a href="#">Mi lista de favoritos</a>
+            <a href="#">Rastrear mi pedido</a>
+            <a href="#">Ayuda</a>
+        </div>
+
+        <div class="col install">
+            <h4>Instalar App</h4>
+            <p>Desde la Tienda de Aplicaciones o Google Play</p>
+            <div class="row">
+                <img src="./img/pay/app.jpg" alt="">
+                <img src="./img/pay/play.jpg" alt="">
+            </div>
+            <p>Formas de Pago</p>
+            <img src="./img/pay/pay.png">
+        </div>
+
+        <div class="copyright">
+            <p> Copyright © 2022 - <strong>Simansky Shop</strong>. Todos los Derechos Reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simansky Shop</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACION-->
+    <section id="header">
+        <a href="#"><img src="./img/logo3.0.png" class="logo" alt=""></a>
+        
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="shop.html">Productos</a></li>
+                <li><a href="about.html">Info</a></li> 
+                <li><a class="active"  href="contact.html">Contacto</a></li>
+                <!--<li id="lg-bag"><a href="cart.html"><img src="./img/icons/shopping-bag.png" class="cart-icons" alt=""></a></li>-->
+                <li id="lg-user"><a href="user.html"><img src="./img/icons/usuario (2).png" class="user-icons" alt=""></a></li>
+                <li><button id="checkout" class="button-checkout" onclick="pay()"><img src="./img/icons/shopping-bag.png" class="cart" alt=""></button></li>
+                <li><a href="#" id="close"><img src="./img/icons/close.png" alt="" class="icons-close"></a></li>
+            </ul>
+
+            <div id="mobile">
+                    <a class="button-checkout" onclick="pay()" href="cart.html"><img src="./img/icons/shopping-bag.png" class="cart-icons" alt=""></a>
+                    <a href="user.html"><img src="./img/icons/usuario (2).png" class="user-icons" alt=""></a>
+                    <a id="bar" href="#"><img src="./img/icons/menu-burger.png" class="icons-burger"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAGINA PRINCIPAL-->
+    <section id="page-header" class="about-header">
+        <h2>#Hablemos</h2>
+        <p> ¡DEJA UN MENSAJE, nos encanta saber de ti!</p>
+    </section>
+
+    <!-- LOCALIZACION-->
+    <section id="contact-details" class="section-p1">
+        <div class="details">
+            <span>PONERSE EN CONTACTO</span>
+            <h2>Visite una de las ubicaciones de nuestra agencia o contáctenos hoy</h2>
+            <h3>Oficina Principal</h3>
+            <div>
+                <li>
+                    <img class="icons-contact" src="./img/icons/mapa.png" alt="">
+                    <p>Plaza Venezuela, Caracas</p>
+                </li>
+                <li>
+                    <img class="icons-contact" src="./img/icons/correo.png" alt="">
+                    <p>contact@example.com</p>
+                </li>
+                <li>
+                    <img class="icons-contact" src="./img/icons/telefono.png" alt="">
+                    <p>(+58)4140181115</p>
+                </li>
+                <li>
+                    <img class="icons-contact" src="./img/icons/reloj.png" alt="">
+                    <p>Lunes a Sabados, 8:00 am - 6:00pm </p>
+                </li>
+            </div>
+        </div>
+
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15692.372574399493!2d-66.90871410165263!3d10.493323396628089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a59273caf1313%3A0x8b7e054bb68e23cc!2sPlaza%20Venezuela!5e0!3m2!1ses!2sve!4v1655267684082!5m2!1ses!2sve" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- FORMULARIO DE CONTACTO-->
+    <section id="form-details">
+        <form name="form0" method="POST" action="">
+            <span>Escribe un Mensaje</span>
+            <h2>A Nosotros nos gusta saber de ti</h2>
+            <input name="nombre0" type="text" placeholder="Nombre y Apellido">
+            <input name="email0" type="text" placeholder="Correo">
+            <input name="mensaje0" type="text" placeholder="Tema del Mensaje">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+            <button class="normal" onClick="contacto()">Enviar</button>
+        </form>
+
+        <div class="people">
+            <div>
+                <img src="./img/people/1.png" alt="">
+                <p><span>Josua Doe</span> Senior Marketing Manager <br> Telefono: +1 000 123 000 77 88 <br> Email: contact@example.com </p>
+            </div>
+            <div>
+                <img src="./img/people/2.png" alt="">
+                <p><span>William Smith</span> Senior Marketing Manager <br> Telefono: +1 000 123 000 77 89 <br> Email: contact@example.com </p>
+            </div>
+            <div>
+                <img src="./img/people/3.png" alt="">
+                <p><span>Emma Wegner</span> Senior Marketing Manager <br> Telefono: +1 000 123 000 77 90 <br> Email: contact@example.com </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SUBSCRIBIRSE -->
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Subscribase ahora!</h4>
+            <p>Recibira todas nuestras <span>promociones, descuentos, sorpresas</span> y mucho más...</p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Dirección de correo electrónico">
+            <button class="normal" onclick="suscripcion()">Suscribirse</button>
+        </div>
+    </section>
+
+    <!-- FOOTER-->
+    <footer class="section-p1">
+        <div class="col">
+            <a href="./index.html"><img src="./img/logo3.0.png" class="logo" alt=""></a>
+            <h4>Contacto</h4>
+            <p><strong>Dirección:</strong> Caracas, Venezuela.</p>
+            <p><strong>Telefono:</strong> 0414-0181115 </p>
+            <p><strong>Horario</strong> Lunes a Sabado, 8:00am - 6:00pm</p> 
+            <div class="follow">
+                <h4>Síganos</h4>
+                <div class="icon">
+                    <a href="https://wa.me/04140181115"><img src="./img/icons/whatsapp.png" class="icon-social" alt=""></a>
+                    <a href="#"><img src="./img/icons/instagram.png" class="icon-social" alt=""></a>
+                    <a href="#"><img src="./img/icons/facebook.png" class="icon-social" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>Info</h4>
+            <a href="#">Acerca de Nosotros</a>
+            <a href="#">Delivery</a>
+            <a href="#">Política de privacidad</a>
+            <a href="#">Terminos y Condiciones</a>
+            <a href="#">Contacta con Nosotros</a>
+        </div>
+
+        <div class="col">
+            <h4>Mi Cuenta</h4>
+            <a href="#">Registrarse</a>
+            <a href="#">Ver carrito</a>
+            <a href="#">Mi lista de favoritos</a>
+            <a href="#">Rastrear mi pedido</a>
+            <a href="#">Ayuda</a>
+        </div>
+
+        <div class="col install">
+            <h4>Instalar App</h4>
+            <p>Desde la Tienda de Aplicaciones o Google Play</p>
+            <div class="row">
+                <img src="./img/pay/app.jpg" alt="">
+                <img src="./img/pay/play.jpg" alt="">
+            </div>
+            <p>Formas de Pago</p>
+            <img src="./img/pay/pay.png">
+        </div>
+
+        <div class="copyright">
+            <p> Copyright © 2022 - <strong>Simansky Shop</strong>. Todos los Derechos Reservados.</p>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
